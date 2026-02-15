@@ -1,9 +1,9 @@
-def sandwich_ingredients(*ingredients):
-    print("The ingredients for the sandwich are:")
+def make_sandwich(prepared, *ingredients):
+    print(f'\nMaking a {prepared} sandwich with the following ingredients:')
     for ingredient in ingredients:
-        print("- " + ingredient)
+        print(f'~ {ingredient}')
 
-sandwich_ingredients("white bread", "bacon", "lettuce", "tomato", "mayo")
-sandwich_ingredients("rye bread", "corned beef", "sauerkraut", "thousand island dressing", "swiss cheese")
+make_sandwich("toasted","white bread", "bacon", "lettuce", "tomato", "mayo")
+make_sandwich("grilled","rye bread", "corned beef", "sauerkraut", "thousand island dressing", "swiss cheese")
 
 
